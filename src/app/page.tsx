@@ -1,5 +1,5 @@
-import Image from 'next/image';
+import Start from '@/components/Start';
 
 export default function Home() {
-  return <main>1234</main>;
+  return <Start />;
 }

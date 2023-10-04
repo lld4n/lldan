@@ -1,0 +1,57 @@
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__title {
+    text-align: center;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  &__green {
+    color: #00ffa3;
+  }
+  &__city {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__img {
+    position: absolute;
+    left: 120px;
+    bottom: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: rotate(30deg);
+    }
+  }
+  &__link {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(110%);
+    }
+    &.github {
+      top: 200px;
+      right: 400px;
+    }
+    &.telegram {
+      right: 300px;
+      bottom: 100px;
+    }
+  }
+}

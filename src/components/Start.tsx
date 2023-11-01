@@ -6,6 +6,7 @@ import Third from "@/components/Third";
 export default function Start() {
   return (
     <main className="main">
+      <div className="buffer">Проверяю, как работают гугл роботы</div>
       <First />
       <Second />
       <Third />

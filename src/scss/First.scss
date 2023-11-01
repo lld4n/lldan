@@ -24,12 +24,33 @@
     position: absolute;
     left: 100px;
     top: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      transform: rotate(30deg);
+    img {
+      border-radius: 50%;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      z-index: 10;
     }
+    &:hover {
+      img {
+        transform: rotate(15deg);
+      }
+      .first__popup {
+        opacity: 1;
+      }
+    }
+  }
+  &__popup {
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    background: white;
+    color: black;
+    top: -55px;
+    left: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    white-space: nowrap;
   }
   &__link {
     width: 120px;
@@ -59,7 +80,7 @@
 @media (max-width: 1300px) {
   .first {
     &__title {
-      font-size: 72px;
+      font-size: 68px;
     }
   }
 }

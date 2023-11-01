@@ -7,7 +7,21 @@ import { motion } from "framer-motion";
 import me from "../images/me.jpeg";
 import github from "../images/github.svg";
 import telegram from "../images/telegram.svg";
+const list = [
+  "Привет 🖐️, попробуй нажать",
+  "Еще раз 😬",
+  "Класс, еще раз пожалуйста 🤗",
+  "Не знаю, зачем я это написал 🫠",
+  "Но... 🤔",
+  "Мне кажется, это прикольный функционал 👍",
+  "... 🫡",
+  "Мне кажется, ты не можешь остановиться 🫠",
+  "Хватит, пожалуйста 😐",
+  "Серьезно 🙃",
+  "Лучше посмотри мои пет-проекты 🥹",
+];
 export default function First() {
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
   return (
     <section className="first">
       <h1 className="first__title">
@@ -50,7 +64,19 @@ export default function First() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 2 }}
         >
-          <Image src={me} alt="Ильдан" width={120} height={120} />
+          <Image
+            src={me}
+            alt="Ильдан"
+            width={120}
+            height={120}
+            onClick={() => {
+              console.log(selectedIndex);
+              if (selectedIndex !== list.length - 1) {
+                setSelectedIndex(selectedIndex + 1);
+              }
+            }}
+          />
+          <div className="first__popup">{list[selectedIndex]}</div>
         </motion.div>
         <motion.a
           initial={{ opacity: 0 }}

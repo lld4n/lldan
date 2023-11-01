@@ -22,8 +22,8 @@
   }
   &__img {
     position: absolute;
-    left: 120px;
-    bottom: 400px;
+    left: 100px;
+    top: 200px;
     border-radius: 50%;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -47,11 +47,97 @@
     }
     &.github {
       top: 200px;
-      right: 400px;
+      right: 200px;
     }
     &.telegram {
-      right: 300px;
-      bottom: 100px;
+      right: 200px;
+      bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .first {
+    &__title {
+      font-size: 72px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .first {
+    &__title {
+      font-size: 64px;
+    }
+    &__img {
+      width: 60px;
+      height: 60px;
+      position: relative;
+      left: auto;
+      top: auto;
+    }
+    &__block {
+      display: flex;
+      gap: 20px;
+    }
+    &__link {
+      width: 60px;
+      height: 60px;
+      position: relative;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      &.github {
+        top: auto;
+        right: auto;
+      }
+      &.telegram {
+        right: auto;
+        bottom: auto;
+      }
+    }
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .first {
+    &__title {
+      font-size: 46px;
+    }
+    &__city {
+      bottom: 20px;
+      left: 20px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .first {
+    &__title {
+      font-size: 32px;
+    }
+    &__img {
+      display: none;
+    }
+    &__link {
+      width: 40px;
+      height: 40px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .first {
+    &__title {
+      font-size: 26px;
     }
   }
 }

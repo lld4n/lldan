@@ -110,7 +110,7 @@ body,
 main {
   height: 100%;
   background-color: black;
-  scroll-snap-type: y mandatory;
+  //scroll-snap-type: y mandatory;
   &::-webkit-scrollbar {
     width: 0;
   }
@@ -118,5 +118,5 @@ main {
 
 section {
   min-height: 100%;
-  scroll-snap-align: start;
+  //scroll-snap-align: start;
 }

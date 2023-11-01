@@ -1,0 +1,140 @@
+.second {
+  height: 100%;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    height: 100%;
+    padding: 20px 0;
+  }
+  &__nav {
+    font-size: 24px;
+    display: flex;
+    gap: 30px;
+  }
+  &__btn {
+    &.active {
+      color: white;
+    }
+    color: rgba(255, 255, 255, 0.75);
+    &:hover {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1400px;
+    gap: 93px;
+  }
+  &__img {
+    border-radius: 50%;
+    transition: opacity 0.3s ease-in-out;
+    &.disabled {
+      opacity: 0.1;
+    }
+  }
+  &__element {
+    position: relative;
+    &:hover {
+      .second__popup {
+        display: flex;
+      }
+    }
+  }
+  &__popup {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: white;
+    color: black;
+    padding: 10px;
+    white-space: nowrap;
+    border-radius: 10px;
+    top: -74px;
+    left: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  &__popup-title {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1500px) {
+  .second {
+    height: auto;
+    &__wrapper {
+      height: auto;
+      gap: 80px;
+    }
+    &__list {
+      width: 500px;
+      justify-content: center;
+      gap: 40px;
+    }
+    &__popup {
+      border: 2px solid black;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .second {
+    &__element {
+      &:hover {
+        .second__popup {
+          display: none;
+        }
+      }
+    }
+    &__list {
+      width: 100%;
+      padding: 0 20px;
+    }
+    &__wrapper {
+      gap: 40px;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .second {
+    &__list {
+      gap: 20px;
+    }
+    &__img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .second {
+    &__wrapper {
+      gap: 10px;
+    }
+    &__nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__btn {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .second {
+    &__img {
+      width: 60px;
+      height: 60px;
+    }
+    &__list {
+      gap: 10px;
+    }
+  }
+}

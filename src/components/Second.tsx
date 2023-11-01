@@ -3,6 +3,8 @@ import React from "react";
 import { skills } from "@/helpers/skills";
 import Image from "next/image";
 import "../scss/Second.scss";
+import { motion } from "framer-motion";
+
 export default function Second() {
   const [like, setLike] = React.useState(false);
   return (
@@ -25,7 +27,14 @@ export default function Second() {
         <div className="second__list">
           {skills.map((el, i) => {
             return (
-              <div key={i} className="second__element">
+              <motion.div
+                key={i}
+                className="second__element"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: (i / skills.length) * 2 }}
+                viewport={{ once: true }}
+              >
                 <Image
                   src={el.image}
                   alt="image"
@@ -43,7 +52,7 @@ export default function Second() {
                     {el.description}
                   </span>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

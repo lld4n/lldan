@@ -30,8 +30,8 @@ export default function Second() {
               <motion.div
                 key={i}
                 className="second__element"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: (i / skills.length) * 2 }}
                 viewport={{ once: true }}
               >

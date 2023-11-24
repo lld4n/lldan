@@ -59,20 +59,19 @@ export const projects: projectsType[] = [
   },
   {
     image: monopoly,
-    name: "monopoly",
+    name: "mono",
     secondName: "Онлайн монополия",
-    description:
-      "Интересный опыт работы с Google Firebase\nVite + React + TS + Firebase",
+    description: "Проект активно пишется. Работа в команде",
     urls: [
       {
         github: true,
-        url: "https://github.com/lld4n/monopoly",
-        text: "lld4n/monopoly",
+        url: "https://github.com/lld4n/mono",
+        text: "lld4n/mono",
       },
       {
         github: false,
-        url: "https://monopoly.lldan.ru",
-        text: "monopoly.lldan.ru",
+        url: "https://mono.lldan.ru",
+        text: "mono.lldan.ru",
       },
     ],
   },

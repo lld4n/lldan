@@ -1,11 +1,11 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://lldan.ru',
+      url: "https://lldan.ru",
       lastModified: new Date(),
-      changeFrequency: 'yearly',
+      changeFrequency: "monthly",
       priority: 1,
     },
   ];

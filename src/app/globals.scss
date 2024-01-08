@@ -1,9 +1,19 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   border: none;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
 }
 
 *,
@@ -77,11 +87,10 @@ input::-ms-clear {
 }
 
 button,
-input[type='submit'] {
+input[type="submit"] {
   display: inline-block;
   box-shadow: none;
-  background-color: transparent;
-  background: none;
+  background: transparent none;
   cursor: pointer;
 }
 
@@ -110,7 +119,6 @@ body,
 main {
   height: 100%;
   background-color: black;
-  //scroll-snap-type: y mandatory;
   &::-webkit-scrollbar {
     width: 0;
   }
@@ -118,5 +126,4 @@ main {
 
 section {
   min-height: 100%;
-  //scroll-snap-align: start;
 }

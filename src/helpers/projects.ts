@@ -1,8 +1,8 @@
-import lext from "../images/projects/lext.png";
-import monopoly from "../images/projects/monopoly.png";
-import musiclyrics from "../images/projects/musiclyrics.png";
-import nbascrapper from "../images/projects/nbascrapper.png";
-import sneakers from "../images/projects/sneakers.png";
+import lext from "@/assets/projects/lext.png";
+import monopoly from "@/assets/projects/monopoly.png";
+import musiclyrics from "@/assets/projects/musiclyrics.png";
+import nbascrapper from "@/assets/projects/nbascrapper.png";
+import sneakers from "@/assets/projects/sneakers.png";
 import { StaticImageData } from "next/image";
 
 type projectsType = {

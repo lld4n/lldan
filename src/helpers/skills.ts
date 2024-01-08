@@ -1,123 +1,235 @@
-import css from "../images/skills/css.svg";
-import expressjs from "../images/skills/expressjs.svg";
-import figma from "../images/skills/figma.svg";
-import firebase from "../images/skills/firebase.svg";
-import framermotion from "../images/skills/framermotion.svg";
-import git from "../images/skills/git.svg";
-import html from "../images/skills/html.svg";
-import javascript from "../images/skills/javascript.svg";
-import jest from "../images/skills/jest.svg";
-import nextjs from "../images/skills/nextjs.svg";
-import nodejs from "../images/skills/nodejs.svg";
-import npm from "../images/skills/npm.svg";
-import react from "../images/skills/react.svg";
-import reactrouter from "../images/skills/reactrouter.svg";
-import redux from "../images/skills/redux.svg";
-import sass from "../images/skills/sass.svg";
-import tailwind from "../images/skills/tailwind.svg";
-import typescript from "../images/skills/typescript.svg";
-import vite from "../images/skills/vite.svg";
-import webpack from "../images/skills/webpack.svg";
-import yarn from "../images/skills/yarn.svg";
 import { StaticImageData } from "next/image";
-
+import axios from "../assets/skills/axios.svg";
+import cheerio from "../assets/skills/cheerio.svg";
+import convex from "../assets/skills/convex.svg";
+import createreactapp from "../assets/skills/createreactapp.svg";
+import css from "../assets/skills/css.svg";
+import express from "../assets/skills/express.svg";
+import figma from "../assets/skills/figma.svg";
+import firebase from "../assets/skills/firebase.svg";
+import framermotion from "../assets/skills/framermotion.svg";
+import git from "../assets/skills/git.svg";
+import html from "../assets/skills/html.svg";
+import jest from "../assets/skills/jest.svg";
+import js from "../assets/skills/js.svg";
+import ky from "../assets/skills/ky.svg";
+import lucide from "../assets/skills/lucide.svg";
+import nextjs from "../assets/skills/nextjs.svg";
+import nodejs from "../assets/skills/nodejs.svg";
+import npm from "../assets/skills/npm.svg";
+import prettier from "../assets/skills/prettier.svg";
+import react from "../assets/skills/react.svg";
+import reactrouter from "../assets/skills/reactrouter.svg";
+import redux from "../assets/skills/redux.svg";
+import rollup from "../assets/skills/rollup.svg";
+import scss from "../assets/skills/scss.svg";
+import ts from "../assets/skills/ts.svg";
+import vite from "../assets/skills/vite.svg";
+import webpack from "../assets/skills/webpack.svg";
+import yarn from "../assets/skills/yarn.svg";
 type skillsType = {
   image: StaticImageData;
-  liked: boolean;
-  description: string;
+  emoji: string;
   title: string;
+  background: string;
+  color: string;
 };
 export const skills: skillsType[] = [
-  { image: css, liked: false, description: "База", title: "CSS" },
   {
-    image: expressjs,
-    liked: false,
-    description: "Веб-фреймворк для бэкенда на nodejs",
+    image: html,
+    emoji: "🔥",
+    title: "HTML",
+    background: "#FF5800",
+    color: "#FFF",
+  },
+  {
+    image: css,
+    emoji: "🤓",
+    title: "CSS",
+    background: "#2965F1",
+    color: "#FFF",
+  },
+  {
+    image: scss,
+    emoji: "🔥",
+    title: "SCSS",
+    background: "#CD6799",
+    color: "#FFF",
+  },
+  {
+    image: js,
+    emoji: "🚀",
+    title: "JavaScript",
+    background: "#F7DF1E",
+    color: "#000",
+  },
+  {
+    image: ts,
+    emoji: "🔥",
+    title: "TypeScript",
+    background: "#3178C6",
+    color: "#FFF",
+  },
+  {
+    image: react,
+    emoji: "🔥",
+    title: "React",
+    background: "#222222",
+    color: "#FFF",
+  },
+
+  {
+    image: nextjs,
+    emoji: "🚀",
+    title: "Next.js",
+    background: "#FFF",
+    color: "#000",
+  },
+  {
+    image: nodejs,
+    emoji: "⚡️",
+    title: "Node.js",
+    background: "#222222",
+    color: "#FFF",
+  },
+  {
+    image: express,
+    emoji: "😬",
     title: "Express.js",
+    background: "#FFF",
+    color: "#000",
+  },
+  {
+    image: git,
+    emoji: "👍",
+    title: "Git",
+    background: "#F03C2E",
+    color: "#FFF",
   },
   {
     image: figma,
-    liked: true,
-    description: "База не только для дизайнеров",
+    emoji: "🖤",
     title: "Figma",
+    background: "#FFF",
+    color: "#000",
   },
   {
-    image: firebase,
-    liked: true,
-    description: "Облачная база данных и не только от Google",
-    title: "Google Firebase",
-  },
-  {
-    image: framermotion,
-    liked: true,
-    description: "Отличная библиотека для анимации на React",
-    title: "Framer Motion",
-  },
-  { image: git, liked: true, description: "База", title: "Git" },
-  { image: html, liked: false, description: "База", title: "HTML" },
-  { image: javascript, liked: false, description: "База", title: "JavaScript" },
-  {
-    image: jest,
-    liked: false,
-    description: "Библиотека для тестирования JS кода",
-    title: "Jest",
-  },
-  {
-    image: nextjs,
-    liked: false,
-    description: "SSR и тд и тп",
-    title: "Next.js",
-  },
-  { image: nodejs, liked: false, description: "Бэкенд", title: "Node.js" },
-  { image: npm, liked: false, description: "Пакетный менеджер", title: "NPM" },
-  { image: react, liked: true, description: "Мой любимец", title: "React 🔥" },
-  {
-    image: reactrouter,
-    liked: true,
-    description: "Библиотека для маршрутизации React",
-    title: "React Router",
-  },
-  {
-    image: redux,
-    liked: true,
-    description: "Управление состояниями данных",
-    title: "Redux",
-  },
-  {
-    image: sass,
-    liked: true,
-    description: "Лучше, чем css. Less не нравится, люблю скобки ставить",
-    title: "SASS",
-  },
-  {
-    image: tailwind,
-    liked: false,
-    description:
-      "Библиотека, которая продолжает идею bootstrap и улучшает ее, но мне не понравилось",
-    title: "Tailwind",
-  },
-  {
-    image: typescript,
-    liked: true,
-    description: "Мой любимец",
-    title: "TypeScript",
-  },
-  {
-    image: vite,
-    liked: true,
-    description: "Сборка веб-приложений",
-    title: "Vite",
-  },
-  {
-    image: webpack,
-    liked: false,
-    description: "Сборка веб-приложений, Vite нравится больше",
-    title: "Webpack",
+    image: npm,
+    emoji: "🤔",
+    title: "NPM",
+    background: "#FFF",
+    color: "#000",
   },
   {
     image: yarn,
-    liked: true,
-    description: "Пакетный менеджер, лучше чем npm",
+    emoji: "❤️",
     title: "Yarn",
+    background: "#2C8EBB",
+    color: "#FFF",
+  },
+  {
+    image: redux,
+    emoji: "🔒",
+    title: "Redux",
+    background: "#764ABC",
+    color: "#FFF",
+  },
+  {
+    image: firebase,
+    emoji: "💔",
+    title: "Google Firebase",
+    background: "#FFF",
+    color: "#000",
+  },
+  {
+    image: convex,
+    emoji: "❤️‍🔥",
+    title: "Convex",
+    background: "#FFF",
+    color: "#000",
+  },
+  {
+    image: vite,
+    emoji: "🖤",
+    title: "JavaScript",
+    background: "#FFF",
+    color: "#000",
+  },
+  {
+    image: createreactapp,
+    emoji: "🤔",
+    title: "Create React App",
+    background: "#2B313D",
+    color: "#FFF",
+  },
+  {
+    image: rollup,
+    emoji: "🚀",
+    title: "Rollup",
+    background: "#FFF",
+    color: "#000",
+  },
+  {
+    image: webpack,
+    emoji: "🤓",
+    title: "Webpack",
+    background: "#FFF",
+    color: "#000",
+  },
+  {
+    image: reactrouter,
+    emoji: "🫡",
+    title: "React Router",
+    background: "#FFF",
+    color: "#000",
+  },
+  {
+    image: framermotion,
+    emoji: "🫠",
+    title: "Framer Motion",
+    background: "#FFF",
+    color: "#000",
+  },
+  {
+    image: jest,
+    emoji: "🚀",
+    title: "Jest",
+    background: "#99425B",
+    color: "#FFF",
+  },
+  {
+    image: axios,
+    emoji: "😬",
+    title: "Axios",
+    background: "#502DD4",
+    color: "#FFF",
+  },
+  {
+    image: ky,
+    emoji: "🔥",
+    title: "ky",
+    background: "#FFF",
+    color: "#000",
+  },
+  {
+    image: cheerio,
+    emoji: "💔",
+    title: "Cheerio",
+    background: "#E88C1F",
+    color: "#000",
+  },
+  {
+    image: prettier,
+    emoji: "❤️",
+    title: "Prettier",
+    background: "#1B262D",
+    color: "#FFF",
+  },
+  {
+    image: lucide,
+    emoji: "🔥",
+    title: "Lucide",
+    background: "#161617",
+    color: "#FFF",
   },
 ];

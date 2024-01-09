@@ -77,7 +77,6 @@ export const skills: skillsType[] = [
     background: "#222222",
     color: "#FFF",
   },
-
   {
     image: nextjs,
     emoji: "🚀",

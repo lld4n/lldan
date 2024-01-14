@@ -379,14 +379,6 @@ export const projects: projectsType[] = [
     ],
   },
   {
-    image: unnamed,
-    title: "unnamed",
-    subtitle: "",
-    description: "",
-    urls: [],
-    skills: [],
-  },
-  {
     image: leetcode,
     title: "leetcode",
     subtitle: "Мое решение задач",

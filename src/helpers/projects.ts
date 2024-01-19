@@ -283,14 +283,6 @@ export const projects: projectsType[] = [
     ],
   },
   {
-    image: totals,
-    title: "totals",
-    subtitle: "",
-    description: "",
-    urls: [],
-    skills: [],
-  },
-  {
     image: latch,
     title: "latch",
     subtitle: "Веб-приложения для оценки фильмов/сериалов",

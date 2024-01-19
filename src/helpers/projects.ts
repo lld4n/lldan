@@ -337,8 +337,9 @@ export const projects: projectsType[] = [
   {
     image: wheel,
     title: "wheel",
-    subtitle: "",
-    description: "",
+    subtitle: "Чем бы заняться сегодня?",
+    description:
+      "Мини-проект, который позволяет рандомно выбрать, чем заняться сегодня",
     urls: [
       {
         text: "github.com/wheel",

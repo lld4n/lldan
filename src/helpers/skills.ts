@@ -27,6 +27,8 @@ import ts from "../assets/skills/ts.svg";
 import vite from "../assets/skills/vite.svg";
 import webpack from "../assets/skills/webpack.svg";
 import yarn from "../assets/skills/yarn.svg";
+import clerk from "../assets/skills/clerk.svg";
+import asana from "../assets/skills/asana.svg";
 type skillsType = {
   image: StaticImageData;
   emoji: string;
@@ -230,5 +232,19 @@ export const skills: skillsType[] = [
     title: "Lucide",
     background: "#161617",
     color: "#FFF",
+  },
+  {
+    image: clerk,
+    emoji: "😬",
+    title: "Clerk",
+    background: "#161617",
+    color: "#FFF",
+  },
+  {
+    image: asana,
+    emoji: "❤️",
+    title: "Asana",
+    background: "#FFF",
+    color: "#000",
   },
 ];

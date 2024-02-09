@@ -1,12 +1,16 @@
 import "./globals.scss";
 import type { Metadata } from "next";
 import React from "react";
-import Head from "next/head";
+import { Montserrat } from "next/font/google";
 
+const montserrat = Montserrat({
+  weight: ["100", "400", "700"],
+  subsets: ["latin", "cyrillic"],
+});
 export const metadata: Metadata = {
   title: "lldan",
   description: "Frontend developer in Kazan",
-  icons: [],
+  metadataBase: new URL("https://lldan.ru"),
 };
 
 export default function RootLayout({
@@ -16,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }

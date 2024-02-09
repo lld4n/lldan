@@ -1,13 +1,10 @@
-import styles from "./page.module.scss";
-import First from "@/components/First/First";
-import Second from "@/components/Second/Second";
-import Third from "@/components/Third/Third";
+import Info from "@/components/Info/Info";
+import Projects from "@/components/Projects/Projects";
 export default function Home() {
   return (
-    <div className={styles.wrapper}>
-      <First />
-      <Second />
-      <Third />
-    </div>
+    <>
+      <Info />
+      <Projects />
+    </>
   );
 }

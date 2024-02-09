@@ -1,0 +1,50 @@
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.block {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  &:hover {
+    background-color: #2a2929;
+  }
+}
+
+.img {
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+}
+.desc {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  font-weight: 100;
+}
+
+@media (max-width: 1000px) {
+  .img {
+    width: 100px;
+    height: 100px;
+  }
+}
